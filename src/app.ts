@@ -9,10 +9,11 @@ import deserializeUser from "./middleware/deserializeUser";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.use(deserializeUser);
-app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(router);
 

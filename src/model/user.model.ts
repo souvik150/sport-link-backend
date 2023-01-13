@@ -62,7 +62,7 @@ export class User {
   @prop({ default: true })
   verified: boolean;
 
-  posts: ObjectId[];
+  posts: string[];
 
   async validatePassword(this: DocumentType<User>, candidatePassword: string) {
     try {

@@ -1,6 +1,7 @@
 import UserModel, { User } from "../model/user.model";
 
 export function createUser(input: Partial<User>) {
+  input.posts = [];
   return UserModel.create(input);
 }
 

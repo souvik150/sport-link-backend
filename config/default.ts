@@ -10,4 +10,12 @@ export default {
   refreshTokenPrivateKey: process.env.RTPK,
   user: process.env.USER,
   pass: process.env.PASS,
+  firebaseConfig: {
+    api: process.env.API,
+    authDomain: process.env.AUTHDOMAIN,
+    projectId: process.env.PROJECTID,
+    storageBucket: process.env.STORAGEBUCKET,
+    messagingSenderId: process.env.MESSAGINGSENDERID,
+    appId: process.env.APPID,
+  },
 };

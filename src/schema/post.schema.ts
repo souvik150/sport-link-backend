@@ -11,13 +11,6 @@ export const createPostSchema = object({
     caption: string({
       required_error: "Caption is required",
     }),
-    likes: number({
-      required_error: "likes should be number",
-    }),
-    commentsNumber: number({
-      required_error: "comments should be number",
-    }),
-    posts: array(string()),
   }),
 });
 
