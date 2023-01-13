@@ -18,7 +18,11 @@ router.post(
   createPostHandler
 );
 
-router.get("/api/posts", requireUser, getPostHandler);
+router.get(
+  "/api/posts",
+  //  requireUser,
+  getPostHandler
+);
 
 router.get("/api/posts/:category", requireUser, getPostByCategory);
 
