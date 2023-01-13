@@ -1,8 +1,8 @@
 {
-  "name": "auth-api-tutorial",
+  "name": "vi-wall",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Tom Nagle",
+  "author": "Souvik Mukherjee",
   "license": "MIT",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/app.ts",
@@ -21,8 +21,10 @@
   },
   "dependencies": {
     "@typegoose/typegoose": "^9.3.1",
+    "@types/cors": "^2.8.13",
     "argon2": "^0.28.3",
     "config": "^3.3.6",
+    "cors": "^2.8.5",
     "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "express": "^5.0.0-alpha.8",

@@ -10,6 +10,7 @@ import {
 import { nanoid } from "nanoid";
 import argon2 from "argon2";
 import log from "../utils/logger";
+import { ObjectId } from "mongoose";
 
 export const privateFields = [
   "password",
@@ -60,6 +61,8 @@ export class User {
 
   @prop({ default: true })
   verified: boolean;
+
+  posts: ObjectId[];
 
   async validatePassword(this: DocumentType<User>, candidatePassword: string) {
     try {

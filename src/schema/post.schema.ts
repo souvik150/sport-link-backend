@@ -1,4 +1,4 @@
-import { object, string, number, TypeOf } from "zod";
+import { object, string, number, TypeOf, array } from "zod";
 
 export const createPostSchema = object({
   body: object({
@@ -17,6 +17,7 @@ export const createPostSchema = object({
     commentsNumber: number({
       required_error: "comments should be number",
     }),
+    posts: array(string()),
   }),
 });
 

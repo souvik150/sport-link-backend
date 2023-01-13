@@ -28,8 +28,6 @@ export class Post {
 
   @prop({ default: 0 })
   commentsNumber: number;
-
-  // @prop({})
 }
 
 const PostModel = getModelForClass(Post);
